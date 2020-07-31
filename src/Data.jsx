@@ -3,13 +3,13 @@ import axios from "axios";
 
 
 
-function MainData (){
+function Data (){
 const [Media, setMedia] = useState([]);
 
 useEffect(() => {
   axios
-    .get("https://api.nasa.gov/planetary/apod?api_key=ysbmouM5fhCOUpMLeZXAr2DbAnQCE6iun4ukTApX$date=2020-07-15")
-    .then(response => {
+  .get("https://api.nasa.gov/planetary/apod?api_key=bZq7dvX9tzei9EUf1T2t5ZY1vBwyXZGcgda4yg86&date=2020-07-02")
+  .then(response => {
       console.log(response.data)
       setMedia(response.data)
     })
@@ -32,4 +32,4 @@ return (
 );
 }
 
-export default MainData;
+export default Data;

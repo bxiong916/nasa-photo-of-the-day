@@ -30,11 +30,11 @@ function App() {
     <div className = "App-logo"></div>  
     <div className = "App-header">NASA Photo of the Day
     <div className = "App-link">The App Link</div>
-    <div className = "outerEyeOpen"> {title} </div>
-    <img src= {photo} alt= "NPOD"/>
+    <div className = "space"> {title} </div>
+    <img src= {photo} alt= "picOfTheDay"/>
     <div className = "date"> {date}</div>
 
-    <div className = "NPOD"> 
+    <div className = "picOfTheDay"> 
 
 
     </div>
@@ -46,7 +46,7 @@ function App() {
     <article className= "explanation">{explanation}</article>
     </div>
   );
-    <div className = "outerEyeClose"></div>
+    <div className = "space"></div>
 
   </section>
    );
